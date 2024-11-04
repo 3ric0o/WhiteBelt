@@ -32,7 +32,7 @@
                         Console.WriteLine($"\n{player} attacks the {enemy}!\n" +
                                           $"{enemy} takes {playerDamage} damage.\n");
                         enemyHealth -= playerDamage;
-
+                        Thread.Sleep(1000);
                         if (enemyHealth <= 0)
                         {
                             Console.WriteLine($"Congratulations! You have defeated the {enemy}!");
@@ -42,6 +42,7 @@
                         Console.WriteLine($"{enemy} attacks {player}!\n" +
                                           $"{player} takes {enemyDamage} damage.\n");
                         playerHealth -= enemyDamage;
+                        Thread.Sleep(1000);
 
                         if (playerHealth > 0) continue;
                         Console.WriteLine($"You lose! The {enemy} has slain you!");
@@ -55,10 +56,12 @@
                     {
                         playerHealth = maxHealth;
                     }
+                    Thread.Sleep(1000);
                     
                     Console.WriteLine($"{enemy} attacks {player}!\n" +
                                       $"{player} takes {enemyDamage} damage.\n");
                     playerHealth -= enemyDamage;
+                    Thread.Sleep(1000);
 
                     if (playerHealth > 0) continue;
                     Console.WriteLine($"You lose! The {enemy} has slain you!");
