@@ -33,6 +33,7 @@
                                           $"{enemy} takes {playerDamage} damage.\n");
                         enemyHealth -= playerDamage;
                         Thread.Sleep(1000);
+                        
                         if (enemyHealth <= 0)
                         {
                             Console.WriteLine($"Congratulations! You have defeated the {enemy}!");
@@ -45,6 +46,7 @@
                         Thread.Sleep(1000);
 
                         if (playerHealth > 0) continue;
+                        
                         Console.WriteLine($"You lose! The {enemy} has slain you!");
                         return;
                     }
@@ -64,6 +66,7 @@
                     Thread.Sleep(1000);
 
                     if (playerHealth > 0) continue;
+                    
                     Console.WriteLine($"You lose! The {enemy} has slain you!");
                     return;
                 }
