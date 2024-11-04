@@ -1,8 +1,8 @@
-﻿namespace WhiteBelt
-{
-    class Exam_Kata
+﻿namespace Exam_Kata;
+
+    class ExamKata
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string player = "Hero";
             int maxHealth = 50;
@@ -68,4 +68,4 @@
             }
         }
     }
-}
+
